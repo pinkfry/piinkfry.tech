@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136830320-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136830320-1');
+    </script>
+    <script>
+        if ('sw' in navigator) {
+            navigator.serviceWorker("sw.js")
+                .then(registration => {
+                    console.log('service worker registered.')
+                })
+                .catch(err => {
+                    console.log('Service worker not registered')
+                }
+                )
+        }
+    </script>
+    <title>PinkFry | Web Development | Mobile Development | SEO | Web Designing | Digital Marketing</title>
+    <meta charset="utf-8">
+    <link rel="manifest" href="/manifest.json">
+    <meta http-equiv="Cache-control" content="max-age=31536000">
+    <meta name="google-signin-client_id"
+        content="984030785264-j712abraevpq0shjrp009t2v2l1hggqc.apps.googleusercontent.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Looking for the best web designers, Developers and mobile app developers to take care of your small business or e-commerce site? You’ve come to the right place! PINKFRY helps you launching a fruitful online presence and also takes care of your continuous escalation in the online market. " />
+    <meta name="keywords"
+        content="pinkfry, build your website, create your own website,build apps, shopify, wordpress , aws , pink fry, Web Development Company, Mobile Development, Online Business, Google My Business, SEO" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta property="og:image" content="https://www.pinkfry.tech/images/pinkfry_one.webp" />
+    <meta property="og:description"
+        content="PINKFRY helps you launching a fruitful online presence and also takes care of your continuous escalation in the online market." />
+    <meta property="og:url" content="https://www.pinkfry.tech" />
+
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#00d747">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#00d747">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00d747">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" sizes="56x56" href="images/pinkfry.webp">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+    <!-- Main style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- responsive style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- Camera -->
+    <link rel="stylesheet" href="vendor/Camera-master/css/camera.css">
+
+    <!-- Script -->
+    <script src="js/uikit.min.js"></script>
+    <!-- Fix Internet Explorer ______________________________________-->
+
+    <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="vendor/html5shiv.js"></script>
+            <script src="vendor/respond.js"></script>
+        <![endif]-->
+
+
+</head>
+
+
+<body>
+    <div class="main-page-wrapper">
+
+        <!-- ===================================================
+                Loading Transition
+            ==================================================== -->
+        <div id="loader-wrapper">
+            <div id="loader">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!--
+            =============================================
+                Theme Header
+            ==============================================
+            -->
+        <header class="theme-menu-wrapper full-width-menu">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <!-- Logo -->
+                    <div class="logo float-left tran4s"><a href="index.html"><img src="./images/logo/logo.webp"
+                                alt="Logo" style="margin-top:-20px;"></a></div>
+
+                    <!-- ============================ Theme Menu ========================= -->
+                    <nav class="theme-main-menu float-right navbar" id="mega-menu-wrapper">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav">
+                                <li class="dropdown-holder menu-list active"><a href="index.html"
+                                        class="tran3s">Home</a>
+
+                                </li>
+                                <li class="dropdown-holder menu-list"><a href="about-us.html" class="tran3s">About
+                                        Us</a>
+
+                                </li>
+                                <li class="dropdown-holder menu-list"><a href="services.html"
+                                        class="tran3s">Services</a>
+
+                                </li>
+
+                                <li class="menu-list"><a href="contact-us.html" class="tran3s">Contact Us</a></li>
+                                <li class="login-button" id="loginbutton"><a href="#" class="tran3s" data-toggle="modal"
+                                        data-target=".signUpModal">login</a></li>
+                                <div id="loggedin"></div>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav> <!-- /.theme-main-menu -->
+                </div> <!-- /.clearfix -->
+            </div>
+        </header> <!-- /.theme-menu-wrapper -->
+
+        <!--
+            =============================================
+                Theme Main Banner
+            ==============================================
+            -->
+        <div id="theme-main-banner" class="banner-one">
+            <div data-src="images/home/slide-1.webp">
+                <div class="camera_caption">
+                    <div class="container">
+                        <h5 class="wow fadeInUp animated">Use the Power Of Internet &</h5>
+                        <h1 class="wow fadeInUp animated" data-wow-delay="0.2s" style="z-index:1000"><span>Make Your
+                            </span><br><span>Online Presence</span><br><span> With US</span></h1>
+                        <a href="about-us.html" class="tran3s hvr-trim wow fadeInUp animated p-bg-color button-one"
+                            data-wow-delay="0.3s">Explore Now</a>
+                        <div class="wow fadeInRight animated image-shape-one" data-wow-delay="0.33s">
+                            <svg version="1.1" class="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="778" height="576">
+                                <clipPath class="clip1">
+                                    <use xlink:href="#shape-one" />
+                                </clipPath>
+                                <g clip-path="url(#shape-one)">
+                                    <image width="778" height="576" href="images/home/1.webp" class="banner-img-one">
+                                    </image>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="wow fadeInRight animated image-shape-two">
+                            <div class="theme-shape-two"></div>
+                        </div>
+                    </div> <!-- /.container -->
+                </div> <!-- /.camera_caption -->
+            </div>
+            <div data-src="images/home/slide-1.webp">
+                <div class="camera_caption">
+                    <div class="container">
+                        <h5 class="wow fadeInUp animated">Facing Difficulties</h5>
+                        <h1 class="wow fadeInUp animated" data-wow-delay="0.2s"><span>Still Lagging Behind ?
+                            </span><br><span>Don’t worry,</span><br><span>We’re here! </span></h1>
+                        <a href="about-us.html" class="tran3s hvr-trim wow fadeInUp animated p-bg-color button-one"
+                            data-wow-delay="0.3s">Explore Now</a>
+                        <div class="wow fadeInRight animated image-shape-one" data-wow-delay="0.33s">
+                            <svg version="1.1" class="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="778" height="576">
+                                <clipPath class="clip1">
+                                    <use xlink:href="#shape-one" />
+                                </clipPath>
+                                <g clip-path="url(#shape-one)">
+                                    <image width="778" height="576" href="images/home/22.jpg" class="banner-img-one">
+                                    </image>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="wow fadeInRight animated image-shape-two">
+                            <div class="theme-shape-two"></div>
+                        </div>
+                    </div> <!-- /.container -->
+                </div> <!-- /.camera_caption -->
+            </div>
+            <div data-src="images/home/slide-1.webp">
+                <div class="camera_caption">
+                    <div class="container">
+                        <h5 class="wow fadeInUp animated">What are you waiting for ?</h5>
+                        <h1 class="wow fadeInUp animated" data-wow-delay="0.2s"><span>Be the
+                            </span><br><span>next online </span><br><span>magnet</span></h1>
+                        <a href="about-us.html" class="tran3s hvr-trim wow fadeInUp animated p-bg-color button-one"
+                            data-wow-delay="0.3s">Explore Now</a>
+                        <div class="wow fadeInRight animated image-shape-one" data-wow-delay="0.33s">
+                            <svg version="1.1" class="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="778" height="576">
+                                <clipPath class="clip1">
+                                    <use xlink:href="#shape-one" />
+                                </clipPath>
+                                <g clip-path="url(#shape-one)">
+                                    <image width="778" height="576" href="images/home/33.jpg" class="banner-img-one">
+                                    </image>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="wow fadeInRight animated image-shape-two">
+                            <div class="theme-shape-two"></div>
+                        </div>
+                    </div> <!-- /.container -->
+                </div> <!-- /.camera_caption -->
+            </div>
+        </div> <!-- /#theme-main-banner -->
+
+
+
+        <!--
+            =============================================
+                What We Do
+            ==============================================
+            -->
+        <div class="what-we-do">
+            <div class="container">
+                <h3>If Your Business is not on Internet, then Your Business is out of business</h3>
+                <h6>we work with business &amp; provide them thier online presence</h6>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft">
+                        <div class="single-block">
+                            <div class="icon color-one"><i class="flaticon-note"></i></div>
+                            <h6>Meeting</h6>
+                            <h5><a href="#" class="tran3s">Have a meeting with us and tell us about your business. our
+                                    team will try to figure out your requirements.</a></h5>
+                        </div> <!-- /.single-block -->
+                    </div> <!-- /.col- -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                        <div class="single-block">
+                            <div class="icon color-two middle-block"><i class="flaticon-bar-chart2"></i></div>
+                            <h6>Planning</h6>
+                            <h5><a href="#" class="tran3s">According to your business our team will suggest you some way
+                                    to rule the internet.</a></h5>
+                        </div> <!-- /.single-block -->
+                    </div> <!-- /.col- -->
+                    <div class="col-md-4 hidden-sm col-xs-12 wow fadeInRight">
+                        <div class="single-block">
+                            <div class="icon color-three"><i class="flaticon-diamond"></i></div>
+                            <h6>Development</h6>
+                            <h5><a href="#" class="tran3s">Our hard working team will provide you an environment for
+                                    online business.</a></h5>
+                        </div> <!-- /.single-block -->
+                    </div> <!-- /.col- -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.what-we-do -->
+
+
+
+        <!--
+            =============================================
+                More About Us
+            ==============================================
+            -->
+        <div class="more-about-us">
+            <div class="image-box">
+                <svg version="1.1" class="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="854" height="632">
+                    <clipPath class="clip1">
+                        <use xlink:href="#shape-one" />
+                    </clipPath>
+                    <g clip-path="url(#shape-one)">
+                        <image width="854" height="632" href="images/home/2.webp" class="image-shape">
+                        </image>
+                    </g>
+                </svg>
+            </div>
+            <div class="theme-shape-three"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-offset-5">
+                        <div class="main-content">
+                            <h2>We’re a dynamic team of creatives people innovation &amp; Expert Developers.</h2>
+                            <div class="main-wrapper">
+                                <h4>Apne Chlte Business Ko Online Dalo</h4>
+                                <p>Looking for the best web designers, Developers and mobile app developers to take care
+                                    of your small business or e-commerce site? You’ve come to the right place! PINKFRY
+                                    helps you launching a fruitful online presence and also takes care of your
+                                    continuous escalation in the online market. </p>
+                                <br>
+                                <br>
+                                <br>
+                                <!-- <img src="images/home/sign.webp" alt="sign"> -->
+                                <div class="button-wrapper p-bg-color">
+                                    <span>Learn More</span>
+                                    <a href="about-us.html" class="hvr-icon-wobble-horizontal">More About us <i
+                                            class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </div> <!-- /.button-wrapper -->
+                            </div> <!-- /.main-wrapper -->
+                        </div> <!-- /.main-content -->
+                    </div> <!-- /.col- -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.more-about-us -->
+
+
+
+
+        <!--
+            =============================================
+                Theme Counter
+            ==============================================
+            -->
+        <div class="theme-counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="single-box">
+                            <h2 class="number"><span class="timer" data-from="0" data-to="150" data-speed="1000"
+                                    data-refresh-interval="5">0</span>+</h2>
+                            <p>Completed Projects</p>
+                        </div> <!-- /.single-box -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="single-box">
+                            <h2 class="number"><span class="timer" data-from="0" data-to="1" data-speed="1000"
+                                    data-refresh-interval="5">0</span></h2>
+                            <p>Available Country</p>
+                        </div> <!-- /.single-box -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="single-box">
+                            <h2 class="number"><span class="timer" data-from="0" data-to="200" data-speed="1000"
+                                    data-refresh-interval="5">0</span>+</h2>
+                            <p>Happy Customers</p>
+                        </div> <!-- /.single-box -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                        <div class="single-box border-fix">
+                            <h2 class="number"><span class="timer" data-from="0" data-to="25" data-speed="1000"
+                                    data-refresh-interval="5">0</span></h2>
+                            <p>Upcoming Projects</p>
+                        </div> <!-- /.single-box -->
+                    </div>
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.theme-counter -->
+
+
+        <!--
+            =============================================
+                Our Portfolio
+            ==============================================
+            -->
+        <!-- <div class="our-portfolio">
+            <div class="container">
+                <div class="theme-title">
+                    <h6>Recent work</h6>
+                    <h2>We’ve done lot’s of work, Let’s <br>Check some from here</h2>
+                    <a href="portfolio-v1.html" class="tran3s">See All projects</a>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="row">
+                    <div class="portfolio-slider">
+                        <div class="item">
+                            <div class="image">
+                                <img src="images/portfolio/1.webp" alt="">
+                                <div class="opacity tran4s"><a data-fancybox="project" href="images/portfolio/1.webp"
+                                        class="tran3s" title="We’ve done lot’s of work, Let’s Check"></a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="images/portfolio/2.webp" alt="">
+                                <div class="opacity tran4s"><a data-fancybox="project" href="images/portfolio/2.webp"
+                                        class="tran3s" title="We’ve done lot’s of work, Let’s Check"></a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="images/portfolio/3.webp" alt="">
+                                <div class="opacity tran4s"><a data-fancybox="project" href="images/portfolio/3.webp"
+                                        class="tran3s" title="We’ve done lot’s of work, Let’s Check"></a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="images/portfolio/4.webp" alt="">
+                                <div class="opacity tran4s"><a data-fancybox="project" href="images/portfolio/4.webp"
+                                        class="tran3s" title="We’ve done lot’s of work, Let’s Check"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+
+
+        <!--
+            =============================================
+                Home Service Section
+            ==============================================
+            -->
+        <div class="home-service-section" style="margin-top:100px">
+            <div class="container">
+                <div class="col-md-9 col-md-offset-3 main-container">
+                    <div class="theme-title">
+                        <h6>Our Services</h6>
+                        <h2>We provide wide range of web &amp; <br>business services.</h2>
+                        <p>We’ve strong work history with different business services</p>
+                        <a href="services.html" class="tran3s">See All Services</a>
+                    </div> <!-- /.theme-title -->
+                    <ul class="clearfix row">
+                        <li class="col-md-6">
+                            <div>
+                                <i class="flaticon-user"></i>
+                                <h5><a href="services.html" class="tran3s">Business Consulting</a></h5>
+                                <p>We make it simplest for you to understand the needs of your online business and
+                                    satisfy those needs </p>
+                            </div>
+                        </li>
+                        <li class="col-md-6">
+                            <div>
+                                <i class="flaticon-layers"></i>
+                                <h5><a href="services.html" class="tran3s">E-Commerce Development</a></h5>
+                                <p>Use the power of internet and sell your product to millions of user online </p>
+                            </div>
+                        </li>
+                        <li class="col-md-6">
+                            <div>
+                                <i class="flaticon-bar-chart"></i>
+                                <h5><a href="services.html" class="tran3s">SEO &amp; SMM services</a></h5>
+                                <p>Get Yourself ranked on Google and Use the power of Social Media to Grow your Business
+                                </p>
+                            </div>
+                        </li>
+                        <li class="col-md-6">
+                            <div>
+                                <i class="flaticon-smartphone"></i>
+                                <h5><a href="services.html" class="tran3s">Website & Apps Development</a></h5>
+                                <p>A website is your first step towards online business. get a website that will fulfill
+                                    your customer needs </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- /.main-container -->
+                <img src="images/home/shape-2.webp" alt="Image" class="wow fadeInLeft">
+            </div> <!-- /.container -->
+        </div> <!-- /.home-service-section -->
+
+
+
+        <div class="home-service-section" style="margin-top:100px">
+            <div class="container">
+                <div class="col-md-12 main-container">
+                    <div class="theme-title">
+                        <h6>Techology</h6>
+                        <h2>We Unleash the Power of Technology</h2>
+                        <p>Get the benefit of Powerful technology stack in your product</p>
+
+                    </div> <!-- /.theme-title -->
+                    <div class="theme-title">
+                        <h6>Web Development</h6>
+                    </div>
+                    <div class="uk-child-width-1-2@xs uk-child-width-1-5@m rm-margin" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge"><img src="images/stack/html-5.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">HTML</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge"><img src="images/stack/css-3.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">CSS</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge"><img src="images/stack/react.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">React</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/angular.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">Angular</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge"><img src="images/stack/wordpress.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">Wordpress</h3>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <!-- Mobile Development -->
+                    <div class="theme-title">
+                        <h6>Mobile App Development</h6>
+                    </div>
+                    <div class="uk-child-width-1-2@xs uk-child-width-1-5@m rm-margin" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/android.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">Android</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/flutter-log.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">Flutter</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/react.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">React Native</h3>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <!-- E-Commerce -->
+                    <div class="theme-title">
+                        <h6>E-Commerce Development</h6>
+                    </div>
+                    <div class="uk-child-width-1-2@xs uk-child-width-1-5@m rm-margin" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/shopify.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">Shopify</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/motlin.png" style="left:0"
+                                        alt="pinkfry_html" height="60" width="60" srcset=""></div>
+                                <h3 class="uk-card-title">Moltin</h3>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <!-- SERVER  -->
+                    <div class="theme-title">
+                        <h6>Server Technologies</h6>
+                    </div>
+                    <div class="uk-child-width-1-2@xs uk-child-width-1-5@m rm-margin" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/nodejs (1).png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">Nodejs</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/php (1).png" style="left:0"
+                                        alt="pinkfry_html" height="60" width="60" srcset=""></div>
+                                <h3 class="uk-card-title">Php</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!-- Cloud  -->
+                    <div class="theme-title">
+                        <h6>CloudTechnologies</h6>
+                    </div>
+                    <div class="uk-child-width-1-2@xs uk-child-width-1-5@m rm-margin" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/aws.png" style="left:0"
+                                        alt="pinkfry_html" srcset=""></div>
+                                <h3 class="uk-card-title">AWS</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/gcp.png" style="left:0"
+                                        alt="pinkfry_html" height="100" width="100" srcset=""></div>
+                                <h3 class="uk-card-title">GCP</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge"><img src="images/stack/heroku.png" style="left:0"
+                                        alt="pinkfry_html" height="60" width="60" srcset=""></div>
+                                <h3 class="uk-card-title">Heroku</h3>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m">
+                                <div class="uk-card-badge "><img src="images/stack/firebase.jpg" style="left:0"
+                                        alt="pinkfry_html" height="60" width="60" srcset=""></div>
+                                <h3 class="uk-card-title">Firebase</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- /.main-container -->
+
+            </div> <!-- /.container -->
+        </div> <!-- /.home-service-section -->
+
+        <!--E-commerce -->
+
+
+
+        <!-- ==================== TWO SECTION WRAPPER ====================== -->
+        <div class="two-section-wrapper">
+            <!--
+                =============================================
+                    Testimonial
+                ==============================================
+                -->
+
+            <!--
+                =============================================
+                    Pricing Plan Style One
+                ==============================================
+                -->
+
+        </div> <!-- /.two-section-wrapper -->
+
+
+
+        <!--
+            =============================================
+                Home Blog Section
+            ==============================================
+            -->
+        <div class="home-blog-section">
+            <div class="container">
+                <div class="theme-title text-center">
+                    <h6>Why US ?</h6>
+                    <h2>6 Reasons To Choose PinkFry</h2>
+                </div> <!-- /.theme-title -->
+
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="single-blog color-one">
+                            <img src="images/icons/trainer.web" alt="">
+
+                            <h5><a href="#" class="tran3s">Online business coach</a></h5>
+                            <p>It’s a battle to get noticed online amidst the noise and crowds as nowadays everyone is
+                                making their online presence. Don’t worry! With PINKFRY we make it simplest for you to
+                                understand the needs of your online business and satisfy those needs. So now, you have
+                                your personal online coach to help you growing in modern online world.</p>
+                            <a href="#" class="tran3s hvr-icon-wobble-horizontal">More Details <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div> <!-- /.single-blog -->
+                    </div> <!-- /.col- -->
+                    <div class="col-md-6 col-xs-12">
+                        <div class="single-blog color-two">
+                            <img src="images/icons/invoice.webp" alt="">
+
+                            <h5><a href="#" class="tran3s">Detailed invoice</a></h5>
+                            <p>Starting an online business is scary because you have to spend your hard earned money in
+                                a venture that you’ve never experienced before. But with PINKFRY you don’t have to worry
+                                about how and where your money Is being spent. We provide invoices containing details of
+                                every penny you pay to us. So now! You need not to worry about how your money is being
+                                utilized by your developers. </p>
+                            <a href="#" class="tran3s hvr-icon-wobble-horizontal">More Details <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div> <!-- /.single-blog -->
+                    </div> <!-- /.col- -->
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12" style="margin-bottom:-30px;">
+                        <div class="single-blog color-three">
+                            <img src="images/icons/laptop.webp" alt="">
+
+                            <h5><a href="#" class="tran3s">Insights</a>
+                            </h5>
+                            <p>A little progress each day adds up to a great result, but for that, you must know how
+                                much you are progressing, and for that you need to have a periodic evaluation of your
+                                business. That is why we provide you monthly progress report of your online business to
+                                keep assuring you that your business is growing and is in safe hands. </p>
+                            <a href="#" class="tran3s hvr-icon-wobble-horizontal">More Details <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div> <!-- /.single-blog -->
+                    </div> <!-- /.col- -->
+                    <div class="col-md-6 col-xs-12">
+                        <div class="single-blog color-four">
+                            <img src="images/icons/networking.webp" alt="">
+
+                            <h5><a href="#" class="tran3s">Expert Team</a></h5>
+                            <p>Our expert team always make sure to satisfy you in the best possible ways. Our team
+                                consists of Highly professional entrepreneurs, web developers, Mobile apps developers,
+                                Web designers, Social media managers, Content strategists, Project managers,
+                                Copywriters, who are available for you 24*7. </p>
+                            <a href="#" class="tran3s hvr-icon-wobble-horizontal">More Details <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div> <!-- /.single-blog -->
+                    </div> <!-- /.col- -->
+
+
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="single-blog color-four">
+                            <img src="images/icons/stewardess.webp" alt="">
+
+                            <h5><a href="#" class="tran3s">Assistance at each step</a></h5>
+                            <p>With PINKFRY you get assistance whenever required. We are here for helping you at each
+                                step of your online escalation. We are with you not only during the project, but even
+                                after project completion wherever and whenever we’re required to assist you.</p>
+                            <a href="#" class="tran3s hvr-icon-wobble-horizontal">More Details <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div> <!-- /.single-blog -->
+                    </div> <!-- /.col- -->
+                    <div class="col-md-6 col-xs-12">
+                        <div class="single-blog color-four">
+                            <img src="images/icons/offline.webp" alt="">
+
+                            <h5><a href="#" class="tran3s">Offline Services</a></h5>
+                            <p>PINKFRY not only gives you online presence, but also helps you flourishing your business
+                                offline by offline promotions in your locality through pamphlet, posters and banners.
+                            </p>
+                            <a href="#" class="tran3s hvr-icon-wobble-horizontal">More Details <i
+                                    class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div> <!-- /.single-blog -->
+                    </div> <!-- /.col- -->
+                </div>
+            </div> <!-- /.container -->
+        </div> <!-- /.home-blog-section -->
+
+
+
+        <!--
+            =============================================
+                Footer
+            ==============================================
+            -->
+        <footer class="bg-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="./images/logo/logo.webp" alt="Logo"></a>
+                            <h5><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDsTwGKrWZSkQtNklXCpLVldPHmZnFCdKmQzkxdxMPbxWhNjZPwxLgmZntwJkZzsXlKxQvv"
+                                    class="tran3s">getpinkfry@gmail.com</a></h5>
+                            <br>
+                            <h6 class="p-color">7982961976<br>9560749965</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-list">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html" class="tran3s">Home</a></li>
+                            <li><a href="about-us.html" class="tran3s">About Us</a></li>
+                            <li><a href="services.html" class="tran3s">Services</a></li>
+                            <li><a href="contact-us.html" class="tran3s">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-list">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="about-us.html" class="tran3s">Our History</a></li>
+                            <li><a href="about-us.html" class="tran3s">Vision</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-subscribe">
+                        <h4>Subscribe Us</h4>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                        </form>
+                        <ul>
+                            <li><a href="https://bit.ly/2UQKasJ" class="tran3s"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/getpinkfry" class="tran3s"><i class="fa fa-twitter"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/getpinkfry" class="tran3s"><i class="fa fa-instagram"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://wa.me/918929249699?text=Hello.%20I%20like%20to%20get%20my%20own%20website%2Ffood%20delivery%20app%2Finternet%20service."
+                                    class="tran3s"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div> <!-- /.row -->
+
+                <div class="bottom-footer clearfix">
+                    <ul class="float-right">
+                        <li>
+                            <h3><span class="timer p-color" data-from="0" data-to="150" data-speed="5000"
+                                    data-refresh-interval="50">0</span> Products</h3>
+                        </li>
+                        <li>
+                            <h3><span class="timer p-color" data-from="0" data-to="200" data-speed="5000"
+                                    data-refresh-interval="50">0</span> Members</h3>
+                        </li>
+                        <li>
+                            <h3><span class="timer p-color" data-from="0" data-to="25" data-speed="5000"
+                                    data-refresh-interval="50">0</span> Upcoming Projects</h3>
+                        </li>
+                    </ul>
+                    <p class="float-left">&copy; 2019 <a href="#" class="tran3s p-color">PinkFry</a>. All rights
+                        reserved</p>
+                </div>
+            </div> <!-- /.container -->
+        </footer>
+
+        <!-- Sign-Up Modal -->
+        <div class="modal fade signUpModal theme-modal-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3>Login with Social Networks</h3>
+                        <ul class="clearfix">
+                            <li class="float-left"><a href="https://bit.ly/2UQKasJ"><i class="fa fa-facebook"
+                                        aria-hidden="true"></i>
+                                    facebook</a></li>
+                            <li class="float-left">
+                                <div data-onsuccess="onSignIn" class="g-signin2"></div>
+                            </li>
+                            <li class="float-left"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                    Twitter</a></li>
+                            <li class="float-left"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    Linkedin</a></li>
+                        </ul>
+                        <form action="#">
+                            <h6><span>or</span></h6>
+                            <div class="wrapper">
+                                <input type="text" placeholder="Username or Email">
+                                <input type="password" placeholder="Password">
+                                <ul class="clearfix">
+                                    <li class="float-left">
+                                        <input type="checkbox" id="remember">
+                                        <label for="remember">Remember Me</label>
+                                    </li>
+                                    <li class="float-right"><a href="#" class="p-color">Lost Your Password?</a></li>
+                                </ul>
+                                <button class="p-bg-color hvr-trim-two">Login</button>
+                            </div>
+                        </form>
+                    </div> <!-- /.modal-body -->
+                </div> <!-- /.modal-content -->
+            </div> <!-- /.modal-dialog -->
+        </div> <!-- /.signUpModal -->
+
+
+
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
+
+        <div id="svag-shape">
+            <svg height="0" width="0">
+                <defs>
+                    <clipPath id="shape-one">
+                        <path fill-rule="evenodd" fill="rgb(168, 168, 168)"
+                            d="M343.000,25.000 C343.000,25.000 100.467,106.465 25.948,237.034 C-30.603,336.119 15.124,465.228 74.674,495.331 C134.224,525.434 212.210,447.071 227.280,432.549 C242.349,418.028 338.889,359.517 460.676,506.542 C582.737,653.896 725.650,527.546 751.000,478.000 C789.282,403.178 862.636,-118.314 343.000,25.000 Z" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+
+
+
+        <!-- Js File_________________________________ -->
+
+        <!-- j Query -->
+        <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+        <!-- Bootstrap Select JS -->
+        <!-- Bootstrap Select JS -->
+        <script type="text/javascript" src="vendor/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+
+        <!-- Vendor js _________ -->
+        <!-- Camera Slider -->
+        <script type='text/javascript' src='vendor/Camera-master/scripts/jquery.mobile.customized.min.js'></script>
+        <script type='text/javascript' src='vendor/Camera-master/scripts/jquery.easing.1.3.js'></script>
+        <script type='text/javascript' src='vendor/Camera-master/scripts/camera.min.js'></script>
+        <!-- Mega menu  -->
+        <script type="text/javascript" src="vendor/menu.js"></script>
+
+        <!-- WOW js -->
+        <script type="text/javascript" src="vendor/WOW-master/dist/wow.min.js"></script>
+        <!-- owl.carousel -->
+        <script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+        <!-- js count to -->
+        <script type="text/javascript" src="vendor/jquery.appear.js"></script>
+        <script type="text/javascript" src="vendor/jquery.countTo.js"></script>
+        <!-- Fancybox -->
+        <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+        <!-- Theme js -->
+        <script type="text/javascript" src="js/theme.js"></script>
+
+
+    </div> <!-- /.main-page-wrapper -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        function onSignIn(googleUser) {
+            var x = document.getElementById('loggedin');
+            var y = document.getElementById('loginbutton')
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+            x.outerHTML = `<div id="1">Hello <div>${profile.getName()}</div>  <img src=${profile.getImageUrl()} style='width:50px;border:50%'/>  <a href='#' onclick='signOut();'>Sign out</a></div>`
+
+            y.style["display"] = "none";
+        }
+    </script>
+    <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+            var y = document.getElementById('loginbutton');
+            var x = document.getElementById('1');
+            y.style["display"] = "block";
+            x.style["display"] = "none";
+
+        }
+    </script>
+    <script src="//instant.page/1.2.2" type="module"
+        integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+</body>
+
+</html>
